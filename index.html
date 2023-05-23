@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            z-index: 1;
+        }
+        h1, a{
+            font-family: 'Pacifico', sans-serif;
+            color: aliceblue;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: repeat(2, 600px) 700px 400px 100px;
+            gap: 10px;
+        }
+        header {
+            background-color: #e0eeff;
+        }
+        header a{
+            position: absolute;
+        }
+        .first-cloud, .second-cloud{
+            font-size: 8rem;
+            opacity: 70%;
+        }
+        .first-cloud{
+            left: 100px;
+            z-index: 1;
+        }
+        .second-cloud{
+            right: 100px;
+            bottom: 30px;
+            z-index: 1;
+        }
+        .introduce{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 1;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 2rem;
+        }
+        .introduce a{
+            position: relative;
+            font-size: 70px;
+            bottom: 100px;
+            color: #1d1f20;
+        }
+        header, section{
+            z-index: 1;
+        }
+        .intro{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding: 100px;
+        }
+        .profil{
+            width: 170px;
+            height: 170px;
+            margin-bottom: 40px;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 100px;
+        }
+        .greeting{
+            font-size: 40px;
+            color: #4180cc;
+        }
+        .suprise-me{
+            width: 300px; 
+            font-size: 20px; 
+            color: #1d1f20;
+            font-family: "Roboto", sans-serif; 
+            text-align: center;
+        }
+        .skill-section{
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+        }
+        .skill-title, .contact-title{
+            text-align: center;
+            font-size: 40px;
+        }
+        .contact-title a{
+            color: #4180cc;
+        }
+        .list-skills{
+            height: 80vh;
+            display: grid;
+            gap: 3rem;
+            grid-template-rows: 1.5fr 1fr;
+            grid-template-columns: 1fr 1f 1fr;
+        }
+        .skill-title{
+            color: #4180cc;
+        }
+        .card-skill{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 1;
+            align-items: center;
+            padding: 0px 20px;
+            border: 2px solid #1d1f20;
+            box-shadow: 1rem 1rem 1rem #e0eeff;
+            border-radius: 10px;
+        }
+        .card-skill:hover{
+            position: relative;
+            bottom: 3px;
+        }
+        .card-skill > img{
+            width: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .skill-item{
+            color: #4180cc;
+            font-weight: bold;
+        }
+        .web-dev{
+            grid-row: 1;
+            grid-column: span 2;
+            justify-content: left;
+        }
+        .programming{
+            grid-row: 2;
+            grid-column: 2 / span 3;
+            justify-content: right;
+            text-align: right;
+        }
+        .skill{
+            width: 400px;
+            margin: 10px;
+            font-size: 20px;
+            text-justify: auto;
+        }
+        .skill-description{
+            text-align: left;
+            font-size: 17px;
+        }
+        
+        .contact-section{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-description{
+            color: #1d1f20;
+            font-size: 23px;
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+        }
+        .contact-me{
+            width: 100px;
+            height: 40px;
+            margin-top: 30px;
+            cursor: pointer;
+            color: #e0eeff;
+            font-weight: bold;
+            background-color: #4180cc;
+            border-radius: 10px;
+            border: 0px;
+        }
+        .contact-me:hover{
+            box-shadow: #93bcf1 0px 1rem 1rem inset;
+        }
+        .contact-me:active{
+            background-color: #497dbc;
+        }
+        footer{
+            background-color: #4180cc;
+        }
+        .social-links{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-link-item{
+            padding: 10px;
+            margin-top: 20px;
+            font-size: large;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
+            color: #e0eeff;
+        }
+        .social-link-item:hover{
+            position: relative;
+            bottom: 3px;
+        }
+        .credit{
+            text-align: center;
+            font-size: small;
+            color: #e0eeff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="first-cloud">☁️</a>
+            <div class="introduce">
+                <a>I'am <span style="text-decoration: underline;">Agi</span></a>
+                <a style="font-family: Robot, sans-serif;">a programmer.</a>
+            </div>
+            <a class="second-cloud">☁️</a>
+        </header>
+        <section class="intro">
+            <img src="profile picture.png" alt="profile picture" class="profil">
+            <a class="greeting">Hai</a>
+            <a class="suprise-me">I am an Fullstack Web Developer. I ❤️ coffee and like exercise.</a>
+        </section>
+        <section class="skill-section">
+            <h2 class="skill-title">My Skills</h2>
+            <div class="list-skills">
+                <div class="card-skill web-dev">
+                    <img src="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_1280.jpg" alt="web">
+                    <div class="skill"> 
+                        <p class="skill-item">Web dev</p>
+                        <p class="skill-description">I have experience as web developer 1 years in some industries and 4 years experiences of learning releated topics.</p>
+                    </div>
+                </div>
+                <div class="card-skill programming">
+                    <div class="skill">
+                        <p class="skill-item">Programming</p>
+                        <p class="skill-description">Strong information technology professional with a Bachelor of Technology - BTech focused in Information Technology</p>
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="programming">
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2 class="contact-title">Get in <a>touch</a></h2>
+            <a class="contact-description">Contact me if you have requests or questions</a>
+            <input type="button" class="contact-me" value="Contact me">
+        </section>
+        <footer>
+            <div class="social-links">
+                <!-- linkedin -->
+                <a href="https://www.linkedin.com/in/agi-lobita-japtara-martadinata-3791a0207/" target="_blank" class="social-link-item">Linkedin</a>
+
+                <!-- tiktok -->
+                <a href="https://www.tiktok.com/@agidinataa" target="_blank" class="social-link-item">Tiktok</a>
+
+                <!-- personal website -->
+                <a href="https://agidinata.my.id/" target="_blank" class="social-link-item">Website</a>
+            </div>
+            <div class="credit">© Agi.</div>
+        </footer>
+    </div>
+</body>
+</html>
