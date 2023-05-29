@@ -19,7 +19,7 @@
         }
         .container{
             display: grid;
-            grid-template-rows: repeat(2, 600px) 700px 400px 100px;
+            grid-template-rows: repeat(2, 600px) 800px 400px 100px;
             gap: 10px;
         }
         header {
@@ -101,7 +101,7 @@
             height: 80vh;
             display: grid;
             gap: 3rem;
-            grid-template-rows: 1.5fr 1fr;
+            grid-template-rows: 1.5fr 1fr 1f;
             grid-template-columns: 1fr 1f 1fr;
         }
         .skill-title{
@@ -131,16 +131,21 @@
             color: #4180cc;
             font-weight: bold;
         }
-        .web-dev{
+        .engineer{
             grid-row: 1;
             grid-column: span 2;
             justify-content: left;
         }
-        .programming{
+        .web-dev{
             grid-row: 2;
             grid-column: 2 / span 3;
             justify-content: right;
-            text-align: right;
+            text-align: left;
+        }
+        .programming{
+            grid-row: 3;
+            grid-column: span 2;
+            justify-content: left;
         }
         .skill{
             width: 400px;
@@ -229,19 +234,26 @@
         <section class="skill-section">
             <h2 class="skill-title">My Skills</h2>
             <div class="list-skills">
-                <div class="card-skill web-dev">
-                    <img src="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_1280.jpg" alt="web">
+                <div class="card-skill engineer">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg" alt="engineer">
                     <div class="skill"> 
-                        <p class="skill-item">Web dev</p>
-                        <p class="skill-description">I have experience as web developer 1 years in some industries and 4 years experiences of learning releated topics.</p>
+                        <p class="skill-item">Software Engineer</p>
+                        <p class="skill-description">I have experience as Software Engineer 4 years experiences.</p>
                     </div>
                 </div>
+                <div class="card-skill web-dev">
+                    <div class="skill"> 
+                        <p class="skill-item">Web dev</p>
+                        <p class="skill-description">I have experience as web developer 1 years in some industries.</p>
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_1280.jpg" alt="web">
+                </div>
                 <div class="card-skill programming">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="programming">
                     <div class="skill">
                         <p class="skill-item">Programming</p>
                         <p class="skill-description">Strong information technology professional with a Bachelor of Technology - BTech focused in Information Technology</p>
                     </div>
-                    <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="programming">
                 </div>
             </div>
         </section>
@@ -256,7 +268,7 @@
                 <a href="https://www.linkedin.com/in/agi-lobita-japtara-martadinata-3791a0207/" target="_blank" class="social-link-item">Linkedin</a>
 
                 <!-- tiktok -->
-                <a href="https://www.tiktok.com/@agidinataa" target="_blank" class="social-link-item">Tiktok</a>
+                <a href="https://github.com/agisx/" target="_blank" class="social-link-item">GitHub</a>
 
                 <!-- personal website -->
                 <a href="https://agidinata.my.id/" target="_blank" class="social-link-item">Website</a>
